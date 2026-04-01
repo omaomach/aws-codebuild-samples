@@ -1,5 +1,12 @@
 version: 0.2
+
 phases:
   build:
     commands:
       - echo "Hello from CodeBuild"
+
+artifacts:
+  files:
+    - '**/*'
+  packaging: zip
+  name: build-output.zip
